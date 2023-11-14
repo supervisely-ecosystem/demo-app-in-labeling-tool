@@ -1,20 +1,16 @@
+import os
+from dotenv import load_dotenv
 import supervisely as sly
-
-# from supervisely.app.widgets import Container
-
-# import src.globals as g
-# import src.ui.input as input
-# import src.ui.settings as settings
-# import src.ui.output as output
-
-# layout = Container(widgets=[input.card, settings.card, output.card])
-
-# # * If the app uses static dir, it should be passed as a parameter.
-# # * If not needed the app can be initialized without static_dir parameter.
-# # * app = sly.Application(layout=layout)
-# app = sly.Application(layout=layout, static_dir=g.STATIC_DIR)
-
 
 from supervisely.app.widgets import Button, Text, Container
 
-button = Button("change text")
+# load_dotenv(os.path.expanduser("~/supervisely.env"))
+
+button = Button("random text")
+text = Text("press the button to get random text")
+
+layout = Container([button, text])
+
+app = sly.Application(layout)
+
+print("hello")
