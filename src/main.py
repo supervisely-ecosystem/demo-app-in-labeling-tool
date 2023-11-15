@@ -13,4 +13,10 @@ layout = Container([button, text])
 
 app = sly.Application(layout)
 
+
+@button.click
+def f():
+    print("123")
+
+
 print("hello")
