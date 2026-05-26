@@ -1,9 +1,10 @@
 {
   "type": "app",
+  "instance_version": "6.15.60",
   "version": "2.0.0",
   "name": "PLACEHOLDER: Name of the application in Ecosystem",
   "description": "PLACEHOLDER: Short description of the app in Ecosystem",
-  "docker_image": "supervisely/base-py-sdk:6.72.50 !!! CHANGE THIS FOR REQUIRED VERSION !!!",
+  "docker_image": "supervisely/base-py-sdk:6.73.564",
   "categories": [
     "images",
     "labeling",
